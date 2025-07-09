@@ -1,0 +1,93 @@
+Create a class Theatre with the below attributes:
+
+theatreId – int
+
+theatreName – String
+
+seatCapacity – int
+
+ticketRate – double
+
+theatreRating – int
+
+The above attributes should be private, write getters, setters, and parameterized constructor as required.
+Create class Solution with main method.
+
+Implement two static methods – findTheatreCategory and findSecondHighestTicket in Solution class.
+findTheatreCategory method:
+Takes two input parameters – an array of Theatre objects and an int value.
+
+The method determines the category of the theatre for the given theatreId:
+
+If seatCapacity > 1000 and theatreRating >= 4, return "Premium".
+
+Else, return "Non Premium".
+
+If no Theatre with the given theatreId exists, return null.
+
+findSecondHighestTicket method:
+Takes an array of Theatre objects as input.
+
+Returns the Theatre object with the second highest ticketRate, only if the theatreRating >= 2.
+
+If no such Theatre exists, return null.
+
+Note:
+
+theatreId is unique.
+
+No two Theatre objects will have the same ticketRate and theatreRating.
+
+The above mentioned static methods should be called from the main method.
+
+For findTheatreCategory method:
+The main method should:
+
+Print the category as "Premium" or "Non Premium" based on logic.
+
+If return value is null, print "There is no Theatre with the given theatreId".
+
+For findSecondHighestTicket method:
+The main method should:
+
+Print the theatreName from the returned Theatre object.
+
+If return value is null, print "Only low rating theatres are available".
+
+Before calling these static methods in main, use Scanner object to:
+
+Read values of 4 Theatre objects in the mentioned order of attributes.
+
+Then read an int for capturing theatreId.
+
+Sample Input:
+yaml
+Copy
+Edit
+100
+Central City Opera House
+900
+24
+4
+101
+Paramount Theatre
+1100
+22
+5
+102
+Radio City Music Hall
+1500
+25
+4
+103
+Schermerhorn Symphony Center
+2000
+21
+3
+102
+Sample Output:
+nginx
+Copy
+Edit
+Premium
+Central City Opera House

@@ -1,0 +1,96 @@
+Create a class DepartmentalStore with the below attributes:
+
+storeId – String
+
+storeName – String
+
+location – String
+
+noOfWorkers – int
+
+rating – int
+
+The above attributes should be private. Write getters, setters, and a parameterized constructor as required.
+
+Create a class Solution with the main method.
+
+Implement two static methods:
+findAverageWorkersInSpecificLocation
+
+findStoreDetailsForGivenLocation
+
+findAverageWorkersInSpecificLocation method:
+This method will take two input parameters:
+an array of DepartmentalStore objects and a String value (startsWithInput).
+
+It will calculate the average number of workers in stores whose storeId starts with the given input string.
+
+If no such store is found, the method should return 0.
+
+findStoreDetailsForGivenLocation method:
+This method takes an array of DepartmentalStore objects and a String value (location) as input.
+
+It will return an array of DepartmentalStore objects located in the given location.
+
+The returned array must be sorted in ascending order of rating.
+
+If no stores are found in the given location, the method should return null.
+
+Additional Notes:
+Both static methods must be called from the main method.
+
+For findAverageWorkersInSpecificLocation:
+
+If the returned value is greater than 0, print the average.
+
+Else, print: "No stores are available with the given input"
+
+For findStoreDetailsForGivenLocation:
+
+If the returned array is not null, print the storeName of each matching store.
+
+Else, print: "No stores present in the given location"
+
+Input Format:
+Read the values of 4 DepartmentalStore objects using Scanner, in the following order:
+storeId, storeName, location, noOfWorkers, rating
+
+Read two more inputs:
+
+A string representing the starting pattern for storeId
+
+A string representing the location to be searched
+
+Sample Input:
+mathematica
+Copy
+Edit
+S100
+Big Bazaar
+Mumbai
+50
+4
+S101
+D-Mart
+Pune
+30
+3
+S102
+Reliance Fresh
+Mumbai
+40
+2
+S103
+More
+Pune
+20
+5
+S10
+Pune
+Sample Output:
+mathematica
+Copy
+Edit
+40
+D-Mart
+More
