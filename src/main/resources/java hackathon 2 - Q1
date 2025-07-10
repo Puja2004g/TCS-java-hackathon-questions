@@ -1,0 +1,147 @@
+Title: Bike showroom
+
+Requirements:
+Create a class Bike with the below private attributes:
+
+id - int
+
+quantity - int
+
+name - String
+
+price - int
+
+Write getters, setters, and parameterized constructors in the above-mentioned attribute sequence as required.
+
+Solution Class:
+Create a class Solution with the main method.
+Implement two static methods:
+
+findMaxPriceOfBike
+
+searchBikeByName
+
+Method Specifications:
+findMaxPriceOfBike:
+Create this static method in the Solution class.
+
+Takes an array of Bike objects as input.
+
+Returns the Bike object with the max price, if found.
+
+Returns null if no such object is found.
+
+searchBikeByName:
+Create this static method in the Solution class.
+
+Takes an array of Bike objects and a String name as input.
+
+Returns the Bike object having the given name, if found.
+
+Returns null if no match is found.
+
+Implementation Notes:
+These methods should be called from the main method.
+
+Do not use static test or print formatting.
+
+Simply call the methods and print results.
+
+All string comparisons should be case-insensitive.
+
+Instructions to write the main method:
+The first input is an integer n representing the number of Bike objects.
+
+The next 4 * n inputs are:
+
+id (int)
+
+quantity (int)
+
+name (String)
+
+price (int)
+
+The final two inputs are:
+
+A bike name to search (String)
+
+An integer value, used to trigger findMaxPriceOfBike.
+
+Main Method Output Rules:
+For findMaxPriceOfBike:
+
+If the returned object is not null, print the bike details.
+
+Else, print:
+No Bike found with mentioned attribute
+
+For searchBikeByName:
+
+If the returned object is not null, print the bike details.
+
+Else, print:
+No Bike found with mentioned attribute
+
+Sample Input 1:
+Copy
+Edit
+4
+101
+2
+TVS Rider
+110000
+102
+3
+Yamaha FZ
+150000
+103
+11
+Royal Enfield
+300000
+104
+20
+Dominar
+230000
+Dominar
+Sample Output 1:
+python
+Copy
+Edit
+id-103
+quantity-11
+name-Royal Enfield
+price-300000
+id-104
+quantity-20
+name-Dominar
+price-230000
+Sample Input 2:
+Copy
+Edit
+4
+101
+1
+Pulsar
+110000
+102
+0
+Glamour
+150000
+103
+0
+Shine
+100000
+104
+0
+MT
+200000
+Dominar
+Sample Output 2:
+python
+Copy
+Edit
+id-104
+quantity-0
+name-MT
+price-200000

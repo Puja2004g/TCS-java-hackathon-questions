@@ -1,0 +1,103 @@
+Title: Grain Inventory Management
+
+Create a class Grain with the below private attributes:
+
+grainid – int
+
+grainName – String
+
+state – String
+
+qtyinQuintal – int
+
+Write getters, setters, and parameterized constructors in the above-mentioned attribute sequence as required.
+
+Create a class Solution with the main method.
+Implement two static methods – countGrainByGivenName and getMinGrainFromMaharashtra in the Solution class.
+
+countGrainByGivenName
+Create a static method countGrainByGivenName in the Solution class.
+This method will take an array of Grain objects and a String as input, and return the count of Grain objects whose grainName matches the input (case insensitive).
+If no such object exists, return 0.
+
+getMinGrainFromMaharashtra
+Create a static method getMinGrainFromMaharashtra in the Solution class.
+This method will take an array of Grain objects and return the Grain object that belongs to state "Maharashtra" (case insensitive) and has the minimum qtyinQuintal among them.
+If no such Grain is found, return null.
+
+These methods should be called from the main method.
+Write code to perform the following tasks:
+Take necessary input and call countGrainByGivenName.
+
+The main method should print the count returned.
+
+If the returned value is 0, print:
+"No Grains with matching names are found"
+
+Take necessary input and call getMinGrainFromMaharashtra.
+
+The main method should print the full Grain object (each attribute in a new line) if the returned value is not null.
+
+Else, it should print:
+"No Grains with matching names are found"
+
+Note:
+
+All String comparisons should be case-insensitive.
+
+The above-mentioned static methods should be called from the main method only.
+
+Don’t use any static test or formatting for printing the result. Just invoke the methods and print the results directly.
+
+Use Scanner for input.
+
+Instructions to write the main method:
+The 1st input is the number of Grain objects (an integer).
+
+For each Grain, input is:
+
+grainid (int)
+
+grainName (String)
+
+state (String)
+
+qtyinQuintal (int)
+
+After all object inputs,
+
+Take a String input for grainName to search
+
+Call countGrainByGivenName.
+
+Then, call getMinGrainFromMaharashtra.
+
+Sample Input 1 (public):
+Copy
+Edit
+4
+100
+Wheat
+Maharashtra
+300
+101
+Rice
+Punjab
+200
+102
+Wheat
+Maharashtra
+150
+103
+Corn
+Maharashtra
+400
+Wheat
+Sample Output 1:
+Copy
+Edit
+2
+102
+Wheat
+Maharashtra
+150
