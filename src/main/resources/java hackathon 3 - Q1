@@ -1,0 +1,113 @@
+Create a class Journalist with the below attributes:
+
+id – int
+
+name – String
+
+experience – int
+
+region – String
+
+The above attributes should be private. Write appropriate getters, setters, and a parameterized constructor.
+
+Create a class Solution with the main method.
+
+Implement the following two static methods in the Solution class:
+
+🔹 findAverageExperienceByRegion method:
+Takes two input parameters – an array of Journalist objects
+and a String region.
+
+Returns the average experience of all journalists from the
+given region.
+
+If no journalist is found from the given region, return 0.
+
+🔹 searchJournalistById method:
+Takes two input parameters – an array of Journalist objects and
+an int id.
+
+Returns the Journalist object whose id matches the given id.
+
+If no such Journalist exists, return null.
+
+📌 Additional Instructions:
+The id of the journalist is unique.
+
+You must call these static methods from the main method.
+
+Before calling the static methods, use Scanner to read data for n Journalist objects in the given order of attributes:
+
+id (int)
+
+name (String)
+
+experience (int)
+
+region (String)
+
+Then read:
+
+A String value for region to be passed to findAverageExperienceByRegion
+
+An int value for id to be passed to searchJournalistById
+
+🖨️ Output Requirements:
+For findAverageExperienceByRegion, if the return value is greater than 0, print:
+
+php-template
+Copy
+Edit
+Average experience: <value>
+Otherwise, print:
+
+pgsql
+Copy
+Edit
+No Journalist found from the given region.
+For searchJournalistById, if a matching Journalist object is returned, print:
+
+php-template
+Copy
+Edit
+id-<id>
+name-<name>
+experience-<experience>
+region-<region>
+Otherwise, print:
+
+pgsql
+Copy
+Edit
+No Journalist found with the given id.
+📥 Sample Input:
+Copy
+Edit
+4
+101
+Ravi Kumar
+5
+Delhi
+102
+Sana Sheikh
+7
+Maharashtra
+103
+Amit Verma
+3
+Kerala
+104
+Priya Desai
+8
+Maharashtra
+Maharashtra
+103
+📤 Sample Output:
+python
+Copy
+Edit
+Average experience: 7.5
+id-103
+name-Amit Verma
+experience-3
+region-Kerala

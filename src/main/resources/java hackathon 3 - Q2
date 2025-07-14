@@ -1,0 +1,110 @@
+Create a class Photographer with the below attributes:
+
+id – int
+
+name – String
+
+specialization – String
+
+rating – double
+
+All the above attributes should be private. Write appropriate getters, setters, and a parameterized constructor.
+
+Create a class Solution with the main method.
+
+Implement the following two static methods in the Solution class:
+
+🔹 countPhotographersBySpecialization method:
+Takes two input parameters – an array of Photographer objects
+and a String specialization.
+
+Returns the count of photographers who match the given specialization (case-insensitive).
+
+If no photographers match the specialization, return 0.
+
+🔹 getSecondHighestRatedPhotographer method:
+Takes an array of Photographer objects.
+
+Returns the Photographer object with the second highest rating.
+
+If no such Photographer exists (i.e., fewer than 2 unique
+ratings), return null.
+
+📌 Additional Instructions:
+id is unique for each photographer.
+
+No two Photographer objects will have the same name and id.
+
+The rating can be duplicated among multiple photographers.
+
+These static methods must be called from the main method.
+
+Use Scanner in the main method to:
+
+Read values for n Photographer objects in the order:
+id, name, specialization, rating
+
+Then read a string for specialization to be used in countPhotographersBySpecialization.
+
+🖨️ Output Requirements:
+For countPhotographersBySpecialization, print:
+
+php-template
+Copy
+Edit
+Number of photographers in <specialization>: <count>
+If no photographer is found, print:
+
+pgsql
+Copy
+Edit
+No photographers found for the given specialization.
+For getSecondHighestRatedPhotographer, if the method returns a Photographer object, print:
+
+php-template
+Copy
+Edit
+id-<id>
+name-<name>
+specialization-<specialization>
+rating-<rating>
+If null is returned, print:
+
+arduino
+Copy
+Edit
+Second highest rated photographer not available.
+📥 Sample Input:
+Copy
+Edit
+5
+101
+Riya Sen
+Wedding
+4.5
+102
+Aman Gupta
+Wildlife
+4.9
+103
+Preeti Mehra
+Wedding
+4.2
+104
+Kabir Sinha
+Fashion
+4.8
+105
+Anjali Rawat
+Fashion
+4.9
+Fashion
+📤 Sample Output:
+javascript
+Copy
+Edit
+Number of photographers in Fashion: 2
+id-104
+name-Kabir Sinha
+specialization-Fashion
+rating-4.8
