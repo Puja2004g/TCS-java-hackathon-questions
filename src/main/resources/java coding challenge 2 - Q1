@@ -1,0 +1,128 @@
+Create a class ArtGallery with the following attributes:
+paintingId – int
+
+quantity – int
+
+style – String
+
+title – String
+
+Write appropriate getters, setters, and a parameterized constructor.
+
+🔹 Implement a class Solution with a main method.
+Implement the following two static methods in the Solution class:
+
+🔹 public static int countTotalPaintingsForStyle(ArtGallery[] gallery, String style)
+This method should return the total quantity of paintings that match the given style (case-insensitive).
+
+Sum the quantity attribute of all ArtGallery objects that match the provided style.
+
+If no painting with the given style is found, return 0.
+
+🔹 public static ArtGallery findPaintingByTitleAndId(ArtGallery[] gallery, String title, int paintingId)
+This method should return the ArtGallery object if the title matches and the paintingId matches exactly (case-insensitive for title).
+
+If any one or both conditions fail, return null.
+
+🔹 In the main method:
+Take input for number of objects.
+
+For each object, input:
+
+paintingId (int)
+
+quantity (int)
+
+style (String)
+
+title (String)
+
+Input:
+
+A style to search total quantity.
+
+A title and paintingId to search for a specific painting.
+
+Call countTotalPaintingsForStyle method:
+
+If value > 0 → print the value directly.
+
+Else → print "The given style is not available"
+
+Call findPaintingByTitleAndId method:
+
+If valid object → print the object.
+
+Else → print "The given title or painting ID is not available"
+
+🔹 Additional Notes:
+All String comparisons should be case-insensitive.
+
+Do not use static test or formatting for printing the result.
+
+Just invoke the method and print the result.
+
+🔹 Sample Input 1:
+vbnet
+Copy
+Edit
+101
+5
+Impressionism
+Sunrise
+102
+3
+Modern
+Shadows
+103
+2
+Impressionism
+Lilies
+104
+4
+Abstract
+Chaos
+105
+6
+Modern
+Dreams
+Impressionism
+Lilies
+103
+🔹 Sample Output 1:
+Copy
+Edit
+7
+2Impressionism
+🔹 Sample Input 2:
+Copy
+Edit
+201
+10
+Cubism
+Shapes
+202
+5
+Baroque
+Lights
+203
+8
+Gothic
+Cathedral
+204
+4
+Realism
+Life
+205
+3
+Surrealism
+Dreams
+Expressionism
+Dreams
+205
+🔹 Sample Output 2:
+arduino
+Copy
+Edit
+The given style is not available
+3Surrealism

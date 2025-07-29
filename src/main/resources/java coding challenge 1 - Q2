@@ -1,0 +1,111 @@
+Class: Vehicle
+This class should contain the following private attributes:
+
+registrationNumber (int)
+
+quantity (int)
+
+type (String)
+
+brand (String)
+
+Constructor:
+A parameterized constructor to initialize all attributes.
+
+Getters and Setters:
+Provide getters and setters for all the attributes.
+
+Class: VehicleManagement
+This class contains the main method which performs the following tasks:
+
+Accept input for ‘n’ Vehicle objects.
+For each vehicle, read:
+
+Registration number (int)
+
+Quantity (int)
+
+Type (String)
+
+Brand (String)
+
+Store all the Vehicle objects in an array.
+
+Read a type (String) to filter the vehicles by type.
+
+Call the method getAverageQuantity(Vehicle[] vehicles, String type) that:
+
+Returns the average quantity of all vehicles matching the specified type (case-insensitive).
+
+Returns 0 if no matching vehicles are found.
+
+Print the average quantity if greater than 0; otherwise, display:
+"No vehicles found for the given type"
+
+Read a brand prefix (String).
+
+Call the method searchVehicleWithBrandPrefix(Vehicle[] vehicles, String prefix) that:
+
+Returns the last vehicle object whose brand starts with the given prefix.
+
+Returns null if no such vehicle is found.
+
+Print the vehicle details in the format:
+registrationNumber-quantity-type-brand
+If no vehicle is found, print:
+"No vehicle found with the given brand prefix"
+
+Method Details:
+static int getAverageQuantity(Vehicle[] vehicles, String type)
+Returns the average quantity of all vehicles with the specified type.
+
+static Vehicle searchVehicleWithBrandPrefix(Vehicle[] vehicles, String prefix)
+Returns the last matching Vehicle whose brand starts with the given prefix.
+
+Input Format:
+The first line contains an integer n, the number of vehicles.
+
+The next 4 × n lines contain the details of each vehicle:
+
+Registration Number
+
+Quantity
+
+Type
+
+Brand
+
+The next line contains a String representing the vehicle type to search.
+
+The final line contains a String representing the brand prefix.
+
+Output Format:
+Average quantity of matching vehicles or a suitable message.
+
+Matching vehicle details or a suitable message.
+
+Sample Input:
+yaml
+Copy
+Edit
+3
+1234
+10
+Truck
+Tata Motors
+2345
+15
+Car
+Hyundai
+3456
+20
+Truck
+Ashok Leyland
+Truck
+Tata
+Sample Output:
+yaml
+Copy
+Edit
+15
+1234-10-Truck-Tata Motors

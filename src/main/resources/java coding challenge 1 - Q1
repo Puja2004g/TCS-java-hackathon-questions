@@ -1,0 +1,124 @@
+Create a class Gadget with the below attributes:
+
+modelNumber - int
+
+stock - int
+
+type - String
+
+brand - String
+
+Write getters, setters, and a parameterized constructor in the above-mentioned attribute sequence as required.
+
+📘 Solution Class Requirements
+Create a class Solution with the main method.
+
+Implement two static methods:
+
+countTotalStockForType
+
+findGadgetByBrandAndModel
+
+📘 Method Descriptions
+1. countTotalStockForType(Gadget[] gadgets, String type):
+Takes an array of Gadget objects and a String parameter type.
+
+Returns the total stock of gadgets that match the given type.
+
+If no gadgets of the given type are found, return 0.
+
+2. findGadgetByBrandAndModel(Gadget[] gadgets, String brand, int modelNumber):
+Takes three parameters:
+
+an array of Gadget objects
+
+a String brand
+
+an int modelNumber
+
+Returns the Gadget object that matches both brand and modelNumber.
+
+If either condition is not met, return null.
+
+📘 Main Method Tasks
+Take input and call countTotalStockForType.
+
+Print the total stock if found.
+Else print:
+No Gadget found with mentioned attribute.
+Take input and call findGadgetByBrandAndModel.
+If result is not null, print:
+No Gadget found with mentioned attribute.
+
+All methods should be called from the main method.
+
+🧪 Sample Input 1:
+yaml
+Copy
+Edit
+5
+1001
+15
+Smartphone
+Samsung
+1002
+20
+Tablet
+Apple
+1003
+18
+Smartphone
+OnePlus
+1004
+12
+Laptop
+Dell
+1005
+10
+Smartphone
+Motorola
+Smartphone
+Samsung
+1001
+
+✅ Sample Output 1:
+Copy
+Edit
+43
+15-Smartphone
+
+🧪 Sample Input 2:
+yaml
+Copy
+Edit
+5
+2001
+8
+Smartwatch
+Noise
+2002
+10
+Smartwatch
+Boat
+2003
+7
+Earbuds
+Sony
+2004
+6
+Earbuds
+JBL
+2005
+9
+Tablet
+Lenovo
+Smartwatch
+Apple
+2006
+
+❌ Sample Output 2:
+pgsql
+Copy
+Edit
+18
+No Gadget found with mentioned attribute.
